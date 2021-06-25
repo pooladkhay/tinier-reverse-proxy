@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  tinier-reverse-proxy:
+    build: .
+    ports:
+      - "4000:4000"
+    # volumes:
+    #   - ./certs:/etc/nginx/certs
+    restart: always
